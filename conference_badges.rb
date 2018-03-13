@@ -13,5 +13,7 @@ def printer
 end
 
 def assign_rooms(attendees)
-  attendees.each_with_index { |name, i| "Hello, #{name}! You'll be assigned to room #{i + 1}!" }
+  welcome_array = []
+  attendees.each_with_index { |name, i| welcome_array << "Hello, #{name}! You'll be assigned to room #{i + 1}!" }
+  return welcome_array
 end
