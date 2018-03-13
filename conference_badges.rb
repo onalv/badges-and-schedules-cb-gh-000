@@ -4,7 +4,8 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(attendees)
-
+  array_attendees = []
+  return attendees.collect{ |attendee| badge_maker(attendee)}
 end
 
 def printer
